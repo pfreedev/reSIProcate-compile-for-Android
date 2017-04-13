@@ -26,12 +26,11 @@ $ sudo apt-get install openjdk-7-jdk
 </pre>
 
 ## SSL
-
 <pre>
 --with-ssl
 </pre>
 
-## 编译
+## Compile
 ### Configure
 <pre>
 $ ./build/configure-android.sh
@@ -44,7 +43,7 @@ $ ./build/configure-android.sh
 > modify makefile only compile resip/rutil
 > > Object: Makefile
 
-### crt*.o设置
+### crt*.o configure
 <pre><code class="shell">
 $ ln -s ${NDK_HOME}/platforms/android-${ANDROID_VERSION}/arch-arm/usr/lib/crtbegin_so.o
 $ ln -s ${NDK_HOME}/platforms/android-${ANDROID_VERSION}/arch-arm/usr/lib/crtend_so.o
